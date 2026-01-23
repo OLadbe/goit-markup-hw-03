@@ -23,8 +23,15 @@ ul, ol {
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -266,6 +273,7 @@ a {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
+  flex-basis: 264px;
 }
 
 .team-card-container {
@@ -322,8 +330,8 @@ a {
   border-top: none;
 }
 
-.portfolio-card img { 
-  box-sizing: border-box;
+.portfolio-card { 
+  flex-basis: 360px;
 }
 
 

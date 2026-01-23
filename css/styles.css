@@ -139,7 +139,7 @@ a {
 .hero {
   background-color: #2e2f42;
   display: block;
-  padding-bottom: 188px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -148,8 +148,6 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  padding-top: 188px;
-  padding-bottom: 48px;
   max-width: 496px;
   margin: 0 auto;
 }
@@ -184,6 +182,9 @@ a {
 }
 
 /* ===== Features ===== */
+.features{
+  padding: 120px 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -200,8 +201,6 @@ a {
 .features-container {
   display: block;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .features-main-title{
@@ -212,11 +211,11 @@ a {
   display: flex;
   box-sizing: border-box;
   gap: 24px;
-  width: calc(100% -72px)/4;
 }
 
 .features-element {
   box-sizing: border-box;
+  width: calc((100% -72px)/4);
 }
 
 .features-title {
@@ -240,13 +239,13 @@ a {
 /* ===== Team ===== */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-container {
   display: block;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
+
 }
 
 .team-list {
@@ -276,6 +275,7 @@ a {
 .team-image {
   width: 264px;
   height: 260px;
+  display: block;
 }
 
 .team-name {
@@ -298,12 +298,16 @@ a {
   margin-right: auto;
 }
 
+
+
 /* ===== Portfolio ===== */
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-container {
   display: block;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -312,10 +316,16 @@ a {
   flex-wrap: wrap;
 
 }
-
-.portfolio-card {
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+.portfolio-text-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
+
+.portfolio-card img { 
+  box-sizing: border-box;
+}
+
 
 .portfolio-title {
   font-weight: 700;
@@ -330,6 +340,7 @@ a {
   width: 360px;
   height: 300px;
   object-fit: cover;
+  display: block;
 }
 
 .portfolio-name {
@@ -337,7 +348,6 @@ a {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
 }
 
 .portfolio-type {
@@ -347,13 +357,9 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
   margin-top: 8px;
-  margin-bottom: 32px;
 }
-
 .portfolio-name, .portfolio-type {
   text-align: left;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 /* ===== Footer ===== */
